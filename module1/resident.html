@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGNAYAN - Resident Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resident.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-house-chimney"></i>
+            </div>
+            <div class="brand-text">
+                <h1>UGNAYAN</h1>
+                <p>Resident Portal</p>
+                <span class="sub-text">Barangay San Juan</span>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link active"><i class="fa-solid fa-border-all"></i> Dashboard</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-user"></i> My Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-triangle-exclamation"></i> Complaints</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bullhorn"></i> Alerts & Calamity</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-calendar-days"></i> Events & Schedule</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-box-open"></i> Borrow Items</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-file-lines"></i> Document Requests</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> Blotter Records</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-heart"></i> Healthcare</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-stethoscope"></i> BHW Info</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-message"></i> Messages</a></li>
+        </ul>
+
+        <div class="user-profile-bottom">
+            <div class="user-info-sidebar">
+                <div class="avatar">J</div>
+                <div class="user-details">
+                    <h4>Juan Dela Cruz</h4>
+                    <span class="status">Approved</span>
+                </div>
+            </div>
+            <a href="login.html" class="logout-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="topbar-title">Barangay San Juan - Resident Portal</div>
+            <div class="topbar-actions">
+                <i class="fa-regular fa-bell notification-bell"></i>
+                <div class="topbar-user">
+                    <div class="avatar">J</div>
+                    <span>Juan Dela Cruz</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Body -->
+        <div class="dashboard-container">
+            
+            <!-- Welcome Hero Card -->
+            <div class="welcome-card">
+                <div class="welcome-text">
+                    <p>Welcome back,</p>
+                    <h2>Juan Dela Cruz</h2>
+                    <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Resident - Purok 1</span>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Active Requests</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Filed Complaints</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Unread Notifications</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alert Banner -->
+            <div class="alert-banner">
+                <div class="alert-icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="alert-content">
+                    <h4>Typhoon Warning Signal #2</h4>
+                    <p>Typhoon Carina approaching. Expect strong winds and heavy rains. Prepare emergency kits.</p>
+                </div>
+                <i class="fa-solid fa-chevron-right alert-arrow"></i>
+            </div>
+
+            <!-- Quick Access Section -->
+            <h3 class="section-title">Quick Access</h3>
+            <div class="quick-access-grid">
+                <a href="#" class="qa-card"><i class="fa-regular fa-user icon-blue"></i><span>My Profile</span></a>
+                <a href="#" class="qa-card"><i class="fa-solid fa-triangle-exclamation icon-orange"></i><span>File Complaint</span></a>
+                <a href="#" class="qa-card"><i class="fa-regular fa-file-lines icon-purple"></i><span>Request Document</span></a>
+                <a href="#" class="qa-card"><i class="fa-solid fa-bullhorn icon-red"></i><span>View Alerts</span></a>
+                <a href="#" class="qa-card"><i class="fa-regular fa-calendar-days icon-teal"></i><span>Events</span></a>
+                <a href="#" class="qa-card"><i class="fa-solid fa-box-open icon-brown"></i><span>Borrow Items</span></a>
+                <a href="#" class="qa-card"><i class="fa-solid fa-book-open icon-gray"></i><span>My Blotter</span></a>
+                <a href="#" class="qa-card"><i class="fa-regular fa-heart icon-pink"></i><span>Healthcare</span></a>
+                <a href="#" class="qa-card"><i class="fa-solid fa-stethoscope icon-green"></i><span>My BHW</span></a>
+                <a href="#" class="qa-card"><i class="fa-regular fa-message icon-indigo"></i><span>Messages</span></a>
+            </div>
+
+            <!-- Two Column Layout: Requests & Events -->
+            <div class="dashboard-columns">
+                
+                <!-- My Requests List -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>My Requests</h3>
+                        <a href="#">View All &gt;</a>
+                    </div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="item-icon bg-purple-light"><i class="fa-regular fa-file-lines text-purple"></i></div>
+                            <div class="item-details">
+                                <h4>Barangay Clearance</h4>
+                                <p>2024-01-22</p>
+                            </div>
+                            <div class="item-status status-ready">Ready</div>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-icon bg-orange-light"><i class="fa-solid fa-triangle-exclamation text-orange"></i></div>
+                            <div class="item-details">
+                                <h4>Filed Complaint - Noise</h4>
+                                <p>2024-01-20</p>
+                            </div>
+                            <div class="item-status status-pending">Pending</div>
+                        </div>
+                        <div class="list-item">
+                            <div class="item-icon bg-brown-light"><i class="fa-solid fa-box-open text-brown"></i></div>
+                            <div class="item-details">
+                                <h4>Borrowed: Monobloc Chairs (20)</h4>
+                                <p>2024-01-18</p>
+                            </div>
+                            <div class="item-status status-approved">Approved</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events List -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Upcoming Events</h3>
+                        <a href="#">View All &gt;</a>
+                    </div>
+                    <div class="list-group">
+                        <div class="list-item">
+                            <div class="calendar-date">
+                                <span class="month">Feb</span>
+                                <span class="day">10</span>
+                            </div>
+                            <div class="item-details">
+                                <h4>Barangay Fiesta Celebration</h4>
+                                <p>Barangay Plaza</p>
+                            </div>
+                            <button class="btn-rsvp">RSVP</button>
+                        </div>
+                        <div class="list-item">
+                            <div class="calendar-date">
+                                <span class="month">Feb</span>
+                                <span class="day">05</span>
+                            </div>
+                            <div class="item-details">
+                                <h4>Free Medical Mission</h4>
+                                <p>Barangay Health Center</p>
+                            </div>
+                            <button class="btn-rsvp">RSVP</button>
+                        </div>
+                        <div class="list-item">
+                            <div class="calendar-date">
+                                <span class="month">Jan</span>
+                                <span class="day">30</span>
+                            </div>
+                            <div class="item-details">
+                                <h4>Purok 1 & 2 Assembly</h4>
+                                <p>Barangay Hall</p>
+                            </div>
+                            <button class="btn-rsvp">RSVP</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Container -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Modal Title</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="resident.js"></script>
+</body>
+</html>

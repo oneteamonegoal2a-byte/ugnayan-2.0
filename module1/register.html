@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGNAYAN - Resident Registration</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <div class="registration-container">
+        
+        <!-- Header -->
+        <header class="reg-header" id="regHeader">
+            <a href="login.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> UGNAYAN</a>
+            <h2>Resident Registration</h2>
+        </header>
+
+        <!-- Progress Indicator -->
+        <div class="progress-bar" id="progressBar">
+            <div class="step active" data-step="1">
+                <div class="step-circle">1</div>
+                <span>Account Info</span>
+            </div>
+            <div class="step" data-step="2">
+                <div class="step-circle">2</div>
+                <span>Personal Details</span>
+            </div>
+            <div class="step" data-step="3">
+                <div class="step-circle">3</div>
+                <span>Upload Documents</span>
+            </div>
+            <div class="step" data-step="4">
+                <div class="step-circle">4</div>
+                <span>Review & Submit</span>
+            </div>
+        </div>
+
+        <div class="form-card">
+            
+            <!-- STEP 1: Account Information -->
+            <div class="form-step active" id="step1">
+                <h3 class="step-title">Account Information</h3>
+                <div class="input-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="yourname@email.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Password *</label>
+                    <input type="password" placeholder="Min. 8 characters" required>
+                </div>
+                <div class="input-group">
+                    <label>Confirm Password *</label>
+                    <input type="password" placeholder="Re-enter password" required>
+                </div>
+                <div class="info-box">
+                    Your account will be reviewed by the Barangay Admin before activation. Registration is for residents only.
+                </div>
+                <div class="form-actions">
+                    <a href="login.html" class="btn-outline">Back to Login</a>
+                    <button type="button" class="btn-primary btn-next">Next <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- STEP 2: Personal Details -->
+            <div class="form-step" id="step2">
+                <h3 class="step-title">Personal Details</h3>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>First Name *</label>
+                        <input type="text" placeholder="Juan" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name *</label>
+                        <input type="text" placeholder="Dela Cruz" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Middle Name</label>
+                        <input type="text" placeholder="Optional">
+                    </div>
+                    <div class="input-group">
+                        <label>Suffix</label>
+                        <input type="text" placeholder="Jr., Sr., III">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Date of Birth *</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Gender *</label>
+                        <select required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Civil Status *</label>
+                        <select required>
+                            <option value="">Select Civil Status</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Widowed">Widowed</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Purok *</label>
+                        <select required>
+                            <option value="Purok 1">Purok 1</option>
+                            <option value="Purok 2">Purok 2</option>
+                            <option value="Purok 3">Purok 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Contact Number *</label>
+                    <input type="tel" placeholder="09XXXXXXXXX" required>
+                </div>
+                <div class="input-group">
+                    <label>Home Address *</label>
+                    <input type="text" placeholder="House No., Street, Purok" required>
+                </div>
+                <div class="input-group">
+                    <label>Occupation</label>
+                    <input type="text" placeholder="e.g., Student, Employee, Self-employed">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-outline btn-prev"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+                    <button type="button" class="btn-primary btn-next">Next <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- STEP 3: Upload Documents -->
+            <div class="form-step" id="step3">
+                <h3 class="step-title">Upload Required Documents</h3>
+                
+                <div class="upload-box">
+                    <div class="upload-icon"><i class="fa-regular fa-id-card"></i></div>
+                    <div class="upload-text">
+                        <h4>Valid ID *</h4>
+                        <p>Click to upload or drag & drop</p>
+                        <span>Government-issued ID (front side). Max 5MB. JPG or PDF.</span>
+                    </div>
+                </div>
+
+                <div class="upload-box">
+                    <div class="upload-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                    <div class="upload-text">
+                        <h4>Proof of Residency *</h4>
+                        <p>Click to upload or drag & drop</p>
+                        <span>Utility bill, lease contract, or any proof of current address. Max 5MB.</span>
+                    </div>
+                </div>
+
+                <div class="upload-box">
+                    <div class="upload-icon"><i class="fa-regular fa-image"></i></div>
+                    <div class="upload-text">
+                        <h4>2x2 Photo *</h4>
+                        <p>Click to upload or drag & drop</p>
+                        <span>Recent photo with white background. JPG format. Max 2MB.</span>
+                    </div>
+                </div>
+
+                <div class="important-note">
+                    <strong>Important:</strong>
+                    <ul>
+                        <li>All documents must be clear and legible.</li>
+                        <li>Blurry or incomplete documents will be rejected.</li>
+                        <li>Files are kept confidential and used for verification only.</li>
+                    </ul>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-outline btn-prev"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+                    <button type="button" class="btn-primary btn-next">Next <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- STEP 4: Review & Submit -->
+            <div class="form-step" id="step4">
+                <h3 class="step-title">Review & Submit</h3>
+                
+                <div class="summary-box">
+                    <div class="summary-header">
+                        <div class="avatar-lg">JD</div>
+                        <div>
+                            <h4>Juan Dela Cruz</h4>
+                            <p>juan@email.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-grid">
+                        <div class="summary-label">Purok</div>
+                        <div class="summary-value">Purok 1</div>
+                        
+                        <div class="summary-label">Gender</div>
+                        <div class="summary-value">Male</div>
+                        
+                        <div class="summary-label">Civil Status</div>
+                        <div class="summary-value">Single</div>
+                        
+                        <div class="summary-label">Contact</div>
+                        <div class="summary-value">09171234567</div>
+                        
+                        <div class="summary-label">Address</div>
+                        <div class="summary-value">123 Mabini St.</div>
+                    </div>
+                </div>
+
+                <label class="checkbox-container">
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                    <span class="terms-text">I certify that all information provided is true and correct. I understand that providing false information may result in rejection or termination of my account.</span>
+                </label>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-outline btn-prev"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+                    <button type="button" class="btn-primary btn-submit-final">Submit Registration</button>
+                </div>
+            </div>
+
+            <!-- SUCCESS STATE (Hidden by default) -->
+            <div class="success-state" id="successState" style="display: none;">
+                <div class="success-icon">
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <h2>Registration Submitted!</h2>
+                <p>Your registration has been submitted successfully. The Barangay Admin will review your documents and notify you once your account is approved.</p>
+                
+                <div class="status-box">
+                    <strong>Status: Pending Verification</strong>
+                    <br>
+                    <span>Estimated processing time: 1-3 business days</span>
+                </div>
+
+                <a href="login.html" class="btn-primary w-100">Back to Login</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

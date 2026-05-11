@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGNAYAN - Login</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="split-layout">
+        
+        <!-- Left Side: Branding & Stats -->
+        <div class="brand-side">
+            <div class="brand-content">
+                <div class="logo-wrapper">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h1>UGNAYAN</h1>
+                <h2>Barangay Web Management System</h2>
+                <p>Serving and connecting our community through modern, efficient, and transparent barangay governance.</p>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h3>1,248</h3>
+                        <span>Residents</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>10</h3>
+                        <span>Modules</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>3,892</h3>
+                        <span>Documents Issued</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>24</h3>
+                        <span>Health Programs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Login Form -->
+        <div class="form-side">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Welcome Back</h2>
+                    <p>Sign in to your account to continue</p>
+                </div>
+
+                <!-- Role Selection Tabs -->
+                <div class="login-tabs">
+                    <button class="tab-btn active" id="tab-resident" data-role="resident">
+                        <i class="fa-solid fa-users"></i> Resident
+                    </button>
+                    <button class="tab-btn" id="tab-admin" data-role="admin">
+                        <i class="fa-solid fa-user-shield"></i> Admin / Staff / BHW
+                    </button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="you@example.com" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" placeholder="••••••••" required>
+                            <i class="fa-regular fa-eye-slash toggle-password"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Sign In</button>
+                </form>
+
+                <!-- Dynamic Footer Notes -->
+                <div class="form-footer" id="footer-resident">
+                    Don't have an account? <a href="register.html">Register as Resident</a>
+                </div>
+                
+                <div class="form-footer admin-note" id="footer-admin" style="display: none;">
+                    Admin/Staff/BHW accounts are pre-created. Contact the<br>Barangay Secretary for access.
+                </div>
+            </div>
+            
+            <div class="copyright">
+                © 2026 Barangay Management System - Ugnayan
+            </div>
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

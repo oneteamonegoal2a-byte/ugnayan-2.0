@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UGNAYAN - Admin Portal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="brand-text">
+                <h1>UGNAYAN</h1>
+                <p>Admin Portal</p>
+                <span class="sub-text">Barangay Management System</span>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link active"><i class="fa-solid fa-border-all"></i> Dashboard</a></li>
+            <li class="nav-item"><a href="module1/resident.html" class="nav-link"><i class="fa-solid fa-users"></i> Residents</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-triangle-exclamation"></i> Complaints</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bullhorn"></i> Calamity Alerts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-calendar-days"></i> Scheduling</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-box-open"></i> Item Management</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-file-lines"></i> Document Requests</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i> Incident Log</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-heart"></i> Healthcare</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-stethoscope"></i> BHW Module</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-regular fa-message"></i> Communication</a></li>
+        </ul>
+
+        <div class="user-profile-bottom">
+            <div class="user-info-sidebar">
+                <div class="avatar">A</div>
+                <div class="user-details">
+                    <h4>Admin Bayot</h4>
+                    <span class="status">Administrator</span>
+                </div>
+            </div>
+            <a href="module1/login.html" class="logout-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="topbar">
+            <div class="topbar-title">
+                <h2>Dashboard</h2>
+                <p>Wednesday, January 25, 2024 • Barangay San Juan</p>
+            </div>
+            <div class="topbar-actions">
+                <div class="topbar-user">
+                    <div class="avatar">A</div>
+                    <span>Admin Bayot</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-container">
+            <!-- Top Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-title">Total Residents</div>
+                    <div class="stat-value">1,248</div>
+                    <div class="stat-trend trend-up"><i class="fa-solid fa-arrow-trend-up"></i> +74 this month</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Pending Requests</div>
+                    <div class="stat-value">12</div>
+                    <div class="stat-subtext">3 documents • 9 others</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-title">Active Complaints</div>
+                    <div class="stat-value">4</div>
+                    <div class="stat-subtext alert-text"><i class="fa-solid fa-circle-exclamation"></i> 2 high priority</div>
+                </div>
+            </div>
+
+            <!-- Main Dashboard Grid -->
+            <div class="dashboard-grid">
+                
+                <!-- Pending Verifications -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Pending Verifications</h3>
+                        <a href="#">View All &gt;</a>
+                    </div>
+                    <div class="list-group">
+                        <!-- Pending applications will be loaded here dynamically -->
+                    </div>
+                </div>
+
+                <!-- Resident Status Chart Mockup -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>Resident Status</h3>
+                        <button class="btn-outline">Send Notification</button>
+                    </div>
+                    <div class="chart-container">
+                        <div class="donut-chart-mock">
+                            <div class="center-text">
+                                <h3>3,892</h3>
+                                <p>Since Jan 2023</p>
+                            </div>
+                        </div>
+                        <div class="chart-legend">
+                            <div class="legend-item"><span class="dot green"></span> Approved <strong>1024</strong></div>
+                            <div class="legend-item"><span class="dot yellow"></span> Pending <strong>156</strong></div>
+                            <div class="legend-item"><span class="dot red"></span> Rejected <strong>68</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Container -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Modal Title</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
